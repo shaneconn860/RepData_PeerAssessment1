@@ -5,7 +5,6 @@ output:
     keep_md: true
 ---
 
-
 ## Loading and preprocessing the data
 
 This step requires the csv file or dataset to be downloaded to be read in to R to be analyzed. The relevant packages for this assignment are also loaded.
