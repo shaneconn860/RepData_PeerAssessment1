@@ -5,6 +5,8 @@ output:
     keep_md: true
 ---
 
+
+
 ## Loading and preprocessing the data
 
 This step requires the csv file or dataset to be downloaded to be read in to R to be analyzed. The relevant packages for this assignment are also loaded.
@@ -68,7 +70,7 @@ hist <- qplot(dailysteps, data=activity3, binwidth=500)
 hist
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-4-1.png)<!-- -->
 
 The histogram above shows the total number of steps taken each day.
 
@@ -86,7 +88,7 @@ time_series_plot <- ggplot(activity4, aes(x=interval,y=mean.steps)) + geom_line(
 time_series_plot
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-5-1.png)<!-- -->
 
 The time series plot above displays the 5-minute interval on the x-axis and the average number of steps taken across all days on the y-axis.
 
@@ -150,7 +152,7 @@ hist2
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-9-1.png)<!-- -->
 
 The above histogram displays the total number of steps taken each day.
 
@@ -169,6 +171,6 @@ days <- ggplot(activity7, aes(x=interval, y=mean.steps, color=day)) + facet_grid
 days
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](figs/fig-unnamed-chunk-10-1.png)<!-- -->
 
 The steps over the weekend days spike between 500 and 1000 5-minute intervals indicating increased activity at this time. The subsequent intervals tail off in comparison to their weekday counterparts, with the exception of increased activity around the 1800th interval.
