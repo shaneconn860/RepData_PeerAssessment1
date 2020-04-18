@@ -117,6 +117,8 @@ hist2
 
 The above histogram displays the total number of steps taken each day.
 
+Test
+
 ## Are there differences in activity patterns between weekdays and weekends?
 
 ```{r, echo=TRUE}
